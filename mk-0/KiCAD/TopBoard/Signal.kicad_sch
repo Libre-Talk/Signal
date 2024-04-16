@@ -1985,6 +1985,12 @@
 		(uuid "84c67fb5-b58c-4f82-954b-df9716a505ba")
 	)
 	(junction
+		(at 58.42 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ad58729-b1d4-4d6e-8817-81af7f59c6e3")
+	)
+	(junction
 		(at 91.44 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2552,6 +2558,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 139.7) (xy 58.42 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "852da794-1b08-4571-b805-96af1cc02b76")
+	)
+	(wire
+		(pts
 			(xy 104.14 38.1) (xy 104.14 71.12)
 		)
 		(stroke
@@ -2572,7 +2588,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 127) (xy 195.58 127)
+			(xy 58.42 138.43) (xy 195.58 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2640,6 +2656,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "94e1ae38-0478-4aa0-8db7-d22f071806bc")
+	)
+	(wire
+		(pts
+			(xy 175.26 63.5) (xy 203.2 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9851c38c-b495-4262-9eee-a71881c6d676")
 	)
 	(wire
 		(pts
@@ -2863,7 +2889,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 66.04) (xy 195.58 127)
+			(xy 195.58 66.04) (xy 195.58 138.43)
 		)
 		(stroke
 			(width 0)
@@ -19521,28 +19547,6 @@
 		)
 		(uuid "31c459c3-6845-4c14-aba6-57115a71723b")
 	)
-	(label "MIC_DATA2"
-		(at 177.8 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "368f28ea-112e-4c14-ab08-fa4dd95b7c19")
-	)
-	(label "MIC_DATA"
-		(at 177.8 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "399296b5-6667-4235-9455-11d0fe3526d4")
-	)
 	(label "SCL"
 		(at 114.3 55.88 0)
 		(fields_autoplaced yes)
@@ -19675,17 +19679,6 @@
 		)
 		(uuid "d12c476f-c7d9-4e9d-8a59-df1a8843b3bd")
 	)
-	(label "MIC_CLK"
-		(at 177.8 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0d98704-1846-4928-a0e2-9140fd6f622c")
-	)
 	(label "XVF_RST_N"
 		(at 113.03 121.92 0)
 		(fields_autoplaced yes)
@@ -19718,17 +19711,6 @@
 			(justify right bottom)
 		)
 		(uuid "f758728b-aa9e-4433-992a-f2c7ad47a2f2")
-	)
-	(label "MUTE"
-		(at 177.8 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f78f2558-5e86-4492-a790-b4f9ce3cbe8a")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -25242,6 +25224,16 @@
 			)
 			(uuid "40d0c5ed-6cca-409d-9210-a476eb36f312")
 		)
+		(pin "MIC_DATA3" input
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c3c40074-c997-4bce-ba0f-5a8f08a428b4")
+		)
 		(instances
 			(project "Signal"
 				(path "/a5a48d3b-3b6a-46da-b2a2-0ac4508935fc"
@@ -25252,7 +25244,7 @@
 	)
 	(sheet
 		(at 20.32 45.72)
-		(size 38.1 88.9)
+		(size 38.1 93.98)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -25273,7 +25265,7 @@
 			)
 		)
 		(property "Sheetfile" "Host.kicad_sch"
-			(at 20.32 135.2046 0)
+			(at 20.32 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25362,7 +25354,7 @@
 			(uuid "688b5d3c-5971-4e88-b503-4a9f368caea1")
 		)
 		(pin "MUTE" input
-			(at 58.42 127 0)
+			(at 58.42 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25481,6 +25473,46 @@
 			)
 			(uuid "840cecf6-b68b-457d-ac5e-97b88d75a1ad")
 		)
+		(pin "DAC1_M" input
+			(at 58.42 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "50f97004-63f5-4f43-bc35-d1e265509d30")
+		)
+		(pin "DAC1_P" input
+			(at 58.42 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6db8b004-58c3-4325-8b25-a7b60998c3fe")
+		)
+		(pin "DAC2_P" input
+			(at 58.42 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b69a9780-5ec3-4544-87c0-6fbe383253f6")
+		)
+		(pin "DAC2_M" input
+			(at 58.42 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ebfb415d-ca02-4795-b51e-9ed5a2b43e8e")
+		)
 		(instances
 			(project "Signal"
 				(path "/a5a48d3b-3b6a-46da-b2a2-0ac4508935fc"
@@ -25530,16 +25562,6 @@
 			)
 			(uuid "da132f65-f20f-4f9c-a70d-1b103db61e6b")
 		)
-		(pin "MIC_DATA" output
-			(at 203.2 58.42 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9ebbc3d8-251b-4373-974b-46b10d578709")
-		)
 		(pin "MUTE" output
 			(at 203.2 66.04 180)
 			(effects
@@ -25550,7 +25572,17 @@
 			)
 			(uuid "23f1aba2-432e-4c63-808e-dcbcaf175843")
 		)
-		(pin "MIC_DATA2" output
+		(pin "DMIC_IN3" output
+			(at 203.2 63.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "34b8a2ed-2639-4f28-afd1-d52d5a692297")
+		)
+		(pin "DMIC_IN2" output
 			(at 203.2 60.96 180)
 			(effects
 				(font
@@ -25558,7 +25590,17 @@
 				)
 				(justify left)
 			)
-			(uuid "7da8c689-54fd-4742-a4bd-266ad7cf873b")
+			(uuid "e567df27-8880-452a-81d6-d0204091a59a")
+		)
+		(pin "DMIC_IN1" output
+			(at 203.2 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3b0e5932-2e4f-4cd0-b97e-df99aa07b614")
 		)
 		(instances
 			(project "Signal"

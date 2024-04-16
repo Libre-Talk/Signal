@@ -27328,6 +27328,18 @@
 		)
 		(uuid "7fdb156f-08e5-4277-948d-787c13ed3982")
 	)
+	(hierarchical_label "MIC_DATA3"
+		(shape input)
+		(at 294.64 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "886026cb-7e40-4213-af8b-5fdd26d53160")
+	)
 	(hierarchical_label "I2S_LRCK"
 		(shape bidirectional)
 		(at 276.86 121.92 0)
