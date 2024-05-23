@@ -10,7 +10,6 @@ Each sub-directory represents a prototype device. Currently this consists of:
 ## Our open hardware principles
 * **Copy our designs** – build your own
 * **Modify our designs** – remixing is encouraged
-* **Sell products based on our designs** – commercial use is permitted
 * **Always keep the open license** – contribute your output back to the community
 * **Credit the original author(s)** – like they do in science
 
